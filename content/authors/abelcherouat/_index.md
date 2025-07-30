@@ -5,23 +5,17 @@ role: Assistant Professor
 
   Department of Chemistry
 bio: Dr. Mohamed Mohideen earned his PhD  in Inorganic Chemistry from the University of St. Andrews, UK in 2011. He then held a postdoctoral researcher position at the King Abdullah University of Science & Technology, KSA. In 2014 he joined the Institute of Chemistry, Ceylon as a Senior Lecturer in Inorganic Chemistry. He held a Researcher position in the Department of Physical and Macromolecular Chemistry at the Charles University in Prague prior to joining Khalifa University as a Senior Lecturer in 2020. His research interests mainly aim to design and synthesize functional solid-state materials with a special focus on Metal Organic Frameworks and MXenes.
-interests:
-  - Adaptive Remeshing
-  - Material Forming
-  - Structural Simulation and Optimization
-  - Bio-Composites
-  - Multiscale Modeling
-  - Advanced Material Prediction Using Artificial Intelligence
+
 social:
   - icon: envelope
     icon_pack: fas
-    link: mailto:abel.cherouat@utt.fr
+    link: https://www.ku.ac.ae/college-people/mohamed-infas-haja-mohideen
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=xxxxxx&hl=en
+    link: https://scholar.google.com/citations?user=L4E-ysYAAAAJ&hl=en
 organizations:
-  - name: Unit Research Automatic Mesh Generation & Advanced Methods (GAMMA3), UTT
-    url: "https://www.utt.fr"
+  - name: KHALIFA UNIVERSITY
+    url: "https://www.ku.ac.ae/college-people/mohamed-infas-haja-mohideen"
 education:
   courses:
     - course: PhD in Inorganic Chemistry
@@ -96,4 +90,4 @@ publications:
     year: 2023
 ---
 
-Abel CHEROUAT received the engineer degree diploma in Mechanical Engineering in 1989. He also received the Master degree and the Ph.D. in Mechanics of Materials Science and Mechanical Engineering from the University of Franche-Comté, France, in 1999 and 1995 respectively. From 1995 and 1997, he was postdoctoral researcher at Arts & Métiers Paris, France to develop software for composite manufacturing and numerical simulation. He has obtained the Habilitation to Supervise Research from the University of Technology of Compiegne France in 2002. Since 2003, he is full Professor at the University of Technology of Troyes (UTT). He is the principal investigator of many research projects and industrial partnerships at Unit Research Automatic Mesh Generation & Advanced Methods GAMMA3 of UTT. He has supervised 34 PhD thesis. He also is the author and co-author of more than a 3 books and more than 200 papers published in international journals and conferences.
+Dr. Mohamed Mohideen earned his PhD in Inorganic Chemistry from the University of St. Andrews, UK in 2011. He then held a postdoctoral researcher position at the King Abdullah University of Science & Technology, KSA. In 2014 he joined the Institute of Chemistry, Ceylon as a Senior Lecturer in Inorganic Chemistry. He held a Researcher position in the Department of Physical and Macromolecular Chemistry at the Charles University in Prague prior to joining Khalifa University as a Senior Lecturer in 2020. His research interests mainly aim to design and synthesize functional solid-state materials with a special focus on Metal Organic Frameworks and MXenes.
