@@ -18,18 +18,18 @@ i_am_a_sponsor: true
 marketing:
   seo:
     site_type: Organization
-    local_business_type: 'Research Lab'
-    org_name: 'Smart Structural Health Monitoring and Control Laboratory (SSHMC)'
-    description: 'Smart Structural Health Monitoring and Control Laboratory (SSHMC) was established in 2024 and mainly focus on the prediction the remaining life of structures in Civil engeening, such as a bridges, railroads, roads, viaducts or buildings'
-    twitter: 'sshmc'
+    local_business_type: "Research Lab"
+    org_name: "Smart Structural Health Monitoring and Control Laboratory (SSHMC)"
+    description: "Smart Structural Health Monitoring and Control Laboratory (SSHMC) was established in 2024 and mainly focus on the prediction the remaining life of structures in Civil engeening, such as a bridges, railroads, roads, viaducts or buildings"
+    twitter: "sshmc"
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
+    google_analytics: ""
+    baidu_tongji: ""
+    google_tag_manager: ""
+    microsoft_clarity: ""
   verification:
-    google: ''
-    baidu: ''
+    google: ""
+    baidu: ""
 
 # Site header
 
@@ -50,7 +50,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} SSHMC. This site is made with ❤️ by SSHMC'
+    notice: "© {year} SSHMC. This site is made with ❤️ by SSHMC"
     license:
       enable: false
       allow_derivatives: false
@@ -60,8 +60,8 @@ footer:
 # Localization
 
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: "Jan 2, 2006"
+  time_format: "3:04 PM"
   address_format: en-us
 
 # Site features
@@ -77,34 +77,34 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/sshmclab/sshmclab.github.io'
+    url: "https://github.com/abdallahi-elalem/test"
     content_dir: content
     branch: main
   avatar:
     gravatar: false
     shape: circle
   comment:
-    provider: ''
+    provider: ""
     disqus:
-      shortname: ''
+      shortname: ""
       show_count: true
     commento:
-      url: ''
+      url: ""
     giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
+      repo: ""
+      repo_id: ""
+      category: ""
+      category_id: ""
   search:
     provider: google
     algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
+      app_id: ""
+      api_key: ""
+      index_name: ""
       show_logo: false
   map:
-    provider: 'mapnik'
-    api_key: ''
+    provider: "mapnik"
+    api_key: ""
     zoom: 15
 
 # Extensions
@@ -123,5 +123,5 @@ publications:
   citation_style: apa
 
 slides:
-  theme: white  # Reveal JS theme name
-  highlight_style: github  # Highlight JS theme name
+  theme: white # Reveal JS theme name
+  highlight_style: github # Highlight JS theme name
