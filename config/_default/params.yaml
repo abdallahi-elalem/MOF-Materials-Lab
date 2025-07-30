@@ -6,20 +6,22 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
-  theme_night:
-  font: native
+  theme_day: cyberpunk
+  theme_night: cyberpunk
+  font: cyberpunk
   font_size: L
+
+i_am_a_sponsor: true
 
 # SEO
 
 marketing:
   seo:
     site_type: Organization
-    local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    local_business_type: 'Research Lab'
+    org_name: 'Smart Structural Health Monitoring and Control Laboratory (SSHMC)'
+    description: 'Smart Structural Health Monitoring and Control Laboratory (SSHMC) was established in 2024 and mainly focus on the prediction the remaining life of structures in Civil engeening, such as a bridges, railroads, roads, viaducts or buildings'
+    twitter: 'sshmc'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -32,6 +34,9 @@ marketing:
 # Site header
 
 header:
+  image:
+    width: 100
+    height: 100
   navbar:
     enable: true
     align: r
@@ -39,17 +44,17 @@ header:
     show_language: false
     show_day_night: true
     show_search: true
-    highlight_active_link: false
+    highlight_active_link: true
 
 # Site footer
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} SSHMC. This site is made with ❤️ by SSHMC'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
 
 # Localization
@@ -72,7 +77,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/sshmclab/sshmclab.github.io'
     content_dir: content
     branch: main
   avatar:
@@ -91,7 +96,7 @@ features:
       category: ''
       category_id: ''
   search:
-    provider: wowchemy
+    provider: google
     algolia:
       app_id: ''
       api_key: ''
@@ -107,7 +112,7 @@ features:
 extensions:
   decap_cms:
     branch: main
-    local_backend: false
+    local_backend: true
   academicons:
     enable: true
 
@@ -116,3 +121,7 @@ extensions:
 publications:
   date_format: January 2006
   citation_style: apa
+
+slides:
+  theme: white  # Reveal JS theme name
+  highlight_style: github  # Highlight JS theme name

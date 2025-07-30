@@ -7,3 +7,98 @@
 .cta-group {
   justify-content: center;
 }
+
+.gallery-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  background-size: cover;
+  background: #000 center;
+  box-shadow: -2px 2px 10px 0 rgba(#444, 0.4);
+  transition: transform 0.3s ease-in-out;
+  cursor: zoom-in;
+  counter-increment: item-counter;
+  overflow: hidden;
+}
+
+.hero-lead {
+  max-width: 768px;
+  font-size: 1.15rem;
+}
+.hero-lead2 {
+  max-width: 768px;
+  font-size: 0.9rem;
+}
+
+.wg-hero.dark .hero-title,
+.wg-hero.dark .hero-lead,
+.wg-hero.dark .hero-lead2,
+.wg-hero.dark .hero-cta-alt,
+.wg-hero.dark .hero-note > * {
+  color: #fff;
+
+  /* text-shadow: 1px 1px 4px rgba(0,0,0,0.5); */
+
+  /* Uncomment to standout on complicated backgrounds. */
+}
+
+.dark .list-group-item {
+
+  background-color: #2e303c;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.dark .card {
+  background-color: #282a36;
+}
+
+
+
+.hero-title {
+  font-size: 2.25rem;
+  margin-top: 0;
+  line-height: 1;
+}
+
+
+
+
+/* Container for the gallery */
+.award-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Individual image items */
+.award-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make images responsive */
+.award-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional, adds rounded corners to the images */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .award-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .award-gallery {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}

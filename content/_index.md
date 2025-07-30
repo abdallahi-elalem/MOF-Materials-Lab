@@ -8,15 +8,16 @@ sections:
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        Smart Structural Health Monitoring 
+        and Control Laboratory (SSHMC)
       image:
         filename: welcome.jpg
       text: |
         <br>
+        Smart Structural Health Monitoring and Control Laboratory (SSHMC) was established in 2024 and mainly focus on the prediction the remaining life of structures in Civil engeening, such as a bridges, railroads, roads, viaducts or buildings. However, all developped tools and knowledges can be extended to more applications such for crack detection on pipes, flow, .etc
+      text2: |
+        <br>
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
-  
   - block: collection
     content:
       title: Latest News
@@ -45,7 +46,7 @@ sections:
       columns: '1'
       background:
         image: 
-          filename: coders.jpg
+          filename: featured.jpg
           filters:
             brightness: 1
           parallax: false
@@ -58,13 +59,13 @@ sections:
 
   - block: collection
     content:
-      title: Latest Preprints
+      title: Latest Publications
       text: ""
       count: 5
       filters:
         folders:
           - publication
-        publication_type: 'article'
+        publication_type: 'article-journal'
     design:
       view: citation
       columns: '1'
