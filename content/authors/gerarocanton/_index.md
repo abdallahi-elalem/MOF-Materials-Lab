@@ -1,6 +1,6 @@
 ---
-title: Geraro Guillermo Cantón
-role: Associate Professor at Smart Structural Health Monitoring and Control Laboratory (SSHMC)
+title: Fatima El Alem
+role: PhD Student
 bio: Born in Mérida, Yucatán, Mexico, Geraro Guillermo Cantón graduated as a Mechatronics Engineer, specializing in high-power electronics and control systems. His initial pursuit of a Master's in Applied Physics, aiming to specialize in solid-state physics and microchip design, unexpectedly shifted towards synchrotron radiation in the LHC. This led to his PhD research at CERN, where he mapped synchrotron radiation in the arcs of the highest energy hadron colliders, including the LHC, HL-LHC, He-LHC, and FCC-hh. His research culminated in an invitation to join the SppC research group at IHEP/CAS. Subsequently, he served as an Associate Professor at the Polytechnic University of Yucatán, where he taught physics and mathematics and contributed to the study of mechanical statistics. He later joined the China Spallation Neutron Source (CSNS), where he conducted research on Intrabeam Stripping (IBSt) in the low-energy linac. He now works as an Associate Professor at DCI.
 interests:
   - Synchrotron Radiation (SR) Adsorption Mapping
@@ -27,7 +27,7 @@ education:
       year: 2000 - 2005
 superuser: false
 user_groups:
-  - Senior Research Scientist
+  - Graduate Students
 highlight_name: true
 first_name: Geraro
 last_name: Guillermo Cantón
@@ -76,4 +76,4 @@ publications:
     authors: C. A. Valerio-Lizarraga; C. Duarte-Galvan; D. Chavez Valenzuela; G. H. I. Maury Cuna; L. Medina; K. G. Hernández-Chahín; Gerardo Cantón; B. Yee-Rendon
 ---
 
-Born in Mérida, Yucatán, Mexico, I graduated as a Mechatronics Engineer, specializing in high-power electronics and control systems. My initial pursuit of a Master's in Applied Physics, with the goal of specializing in solid-state physics and microchip design, unexpectedly shifted towards synchrotron radiation in the LHC. This led to my PhD research at CERN, where I mapped synchrotron radiation in the arcs of the highest energy hadron colliders, including the LHC, HL-LHC, He-LHC, and FCC-hh. This research culminated in an invitation to join the SppC research group at IHEP/CAS. Subsequently, I served as an Associate Professor at the Polytechnic University of Yucatán, where I taught physics and mathematics and contributed to the study of mechanical statistics. I then joined the China Spallation Neutron Source (CSNS), where I conducted research on Intrabeam Stripping (IBSt) in the low-energy linac. Following my time at CSNS, I joined DCI as an Associate Professor, where I currently work. 
+Born in Mérida, Yucatán, Mexico, I graduated as a Mechatronics Engineer, specializing in high-power electronics and control systems. My initial pursuit of a Master's in Applied Physics, with the goal of specializing in solid-state physics and microchip design, unexpectedly shifted towards synchrotron radiation in the LHC. This led to my PhD research at CERN, where I mapped synchrotron radiation in the arcs of the highest energy hadron colliders, including the LHC, HL-LHC, He-LHC, and FCC-hh. This research culminated in an invitation to join the SppC research group at IHEP/CAS. Subsequently, I served as an Associate Professor at the Polytechnic University of Yucatán, where I taught physics and mathematics and contributed to the study of mechanical statistics. I then joined the China Spallation Neutron Source (CSNS), where I conducted research on Intrabeam Stripping (IBSt) in the low-energy linac. Following my time at CSNS, I joined DCI as an Associate Professor, where I currently work.

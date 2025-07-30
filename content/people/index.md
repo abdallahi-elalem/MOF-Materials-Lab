@@ -11,14 +11,13 @@ sections:
       # Choose which groups/teams of users to display.
       #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
       user_groups:
-          - Lab Director
-          - Senior Research Scientist
-          - Collaborator
-          - Junior Research Assistant
-          - Research Assistant (Remote)
-          - Current Students
-          - Alumni
-          - Intern
+        - Principal Investigator
+        - Graduate Students
+        - Undergraduate Students & Visitors
+        - Alumni
+        - Research Assistant (Remote)
+        - Alumnin
+        - Intern
       sort_by: Params.last_name
       sort_ascending: true
     design:

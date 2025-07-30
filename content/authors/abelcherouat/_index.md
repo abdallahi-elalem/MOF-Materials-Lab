@@ -1,7 +1,10 @@
 ---
-title: Professor Abel CHEROUAT
-role: Director of GAMMA3 Lab and Professor of Structural Mechanics
-bio: Professor Abel Cherouat is an esteemed researcher with extensive expertise in numerical simulation, material forming, and bio-composites. As the director of GAMMA3 Unit Research, his work focuses on advanced modeling of innovative materials, structural simulation, and optimization using artificial intelligence.
+title: Dr. Mohamed Infas Haja Mohideen
+
+role: Assistant Professor
+
+  Department of Chemistry
+bio: Dr. Mohamed Mohideen earned his PhD  in Inorganic Chemistry from the University of St. Andrews, UK in 2011. He then held a postdoctoral researcher position at the King Abdullah University of Science & Technology, KSA. In 2014 he joined the Institute of Chemistry, Ceylon as a Senior Lecturer in Inorganic Chemistry. He held a Researcher position in the Department of Physical and Macromolecular Chemistry at the Charles University in Prague prior to joining Khalifa University as a Senior Lecturer in 2020. His research interests mainly aim to design and synthesize functional solid-state materials with a special focus on Metal Organic Frameworks and MXenes.
 interests:
   - Adaptive Remeshing
   - Material Forming
@@ -21,18 +24,18 @@ organizations:
     url: "https://www.utt.fr"
 education:
   courses:
-    - course: PhD in Mechanics of Materials Science and Mechanical Engineering
-      institution: University of Franche-Comté, France
-      year: 1995
-    - course: Master's Degree in Mechanics of Materials Science
-      institution: University of Franche-Comté, France
-      year: 1993
-    - course: Engineer Degree in Mechanical Engineering
-      institution: Polytechnic Military School, Algeria
-      year: 1989
+    - course: PhD in Inorganic Chemistry
+      institution: University of St-Andrews, School of Chemistry, St-Andrews (United Kingdom)
+      year: 2011
+    - course: MRes in Chemistry
+      institution: University of Bath, Department of Chemistry, Bath (United Kingdom)
+      year: 2008
+    - course: College of Chemical Sciences, Institute of Chemistry, Ceylon. Rajagiriya (Sri Lanka)
+      institution: College of Chemical Sciences, Institute of Chemistry, Ceylon. Rajagiriya (Sri Lanka)
+      year: 2004
 superuser: true
 user_groups:
-  - Lab Director
+  - Principal Investigator
 highlight_name: true
 first_name: Abel
 last_name: Cherouat

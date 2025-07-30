@@ -1,6 +1,6 @@
 ---
-title: Gongfa CHEN
-role: Professor at Smart Structural Health Monitoring and Control Laboratory (SSHMC)
+title: Ahamad Irfan
+role: PhD Student
 bio: Gongfa Chen obtained his PhD from the University of Queensland, Australia. His main research areas include the application of artificial intelligence in civil engineering, bridge structural health monitoring, prefabricated building structures, and computational structural dynamics. He has published over 80 research papers, with more than 60 indexed by SCI, and has been granted 7 invention patents. Gongfa has led 2 National Natural Science Foundation of China projects, 1 provincial-level international scientific and technological cooperation project, and more than 5 industrial projects. He has supervised 5 doctoral students and over 30 master's students, with several students winning national and university-level innovation awards. Gongfa was honored as an outstanding postgraduate supervisor in 2018 and 2023.
 interests:
   - Artificial Intelligence in Civil Engineering
@@ -24,7 +24,7 @@ education:
       year: N/A
 superuser: false
 user_groups:
-  - Senior Research Scientist
+  - Graduate Students
 highlight_name: true
 first_name: Gongfa
 last_name: Chen
@@ -247,7 +247,6 @@ publications:
     journal: Advances in Civil Engineering
     year: 2020
     authors: Yan, Z.; Luo, W.; Bassir, D.; Chen, G.
-  
 ---
 
-Gongfa Chen, obtained his PhD from the university of Queensland, Australia. The main research directions include the application of artificial intelligence in civil engineering, bridge structural health monitoring, prefabricated building structures, and computational structural dynamics. To date, over 80 research papers have been published, with more than 60 indexed by SCI, and 7 invention patents have been granted. Additionally, I have led 2 projects funded by the National Natural Science Foundation of China, 1 provincial-level international scientific and technological cooperation project, and more than 5 industrial projects.  In terms of student mentorship, 5 doctoral students and over 30 master's students have been supervised. Furthermore, more than ten doctoral and master's students have won over 9 awards in national, university, and faculty-level innovation and entrepreneurship competitions under my guidance. In recognition of these efforts, I was honored as an outstanding postgraduate supervisor in 2018 & 2023.
+Gongfa Chen, obtained his PhD from the university of Queensland, Australia. The main research directions include the application of artificial intelligence in civil engineering, bridge structural health monitoring, prefabricated building structures, and computational structural dynamics. To date, over 80 research papers have been published, with more than 60 indexed by SCI, and 7 invention patents have been granted. Additionally, I have led 2 projects funded by the National Natural Science Foundation of China, 1 provincial-level international scientific and technological cooperation project, and more than 5 industrial projects. In terms of student mentorship, 5 doctoral students and over 30 master's students have been supervised. Furthermore, more than ten doctoral and master's students have won over 9 awards in national, university, and faculty-level innovation and entrepreneurship competitions under my guidance. In recognition of these efforts, I was honored as an outstanding postgraduate supervisor in 2018 & 2023.

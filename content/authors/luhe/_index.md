@@ -1,6 +1,6 @@
 ---
-title: Lu He
-role: Researcher in Image Recognition and Autonomous Driving
+title: Fatima Juma Alkaabi
+role: Visiting Student, Chemical Engineering | KU
 bio: The second-year students of the School of Energy Science and Engineering at Henan Polytechnic University have published a SCI four-area paper. Their research focuses on image recognition, autonomous driving, and contributions to the reform of the cruise taxi system in Jiaozuo City, as well as the carbon reduction project at Chang'an University.
 research_topics:
   - Image Recognition
@@ -28,7 +28,7 @@ education:
       year: 2022 - Present
 superuser: false
 user_groups:
-  - Current Students
+  - Undergraduate Students & Visitors
 highlight_name: true
 first_name: Lu
 last_name: Guo
@@ -52,4 +52,5 @@ publications:
     authors: Lu H.; Guo B.; Zhang Z.; et al.
     doi: null
 ---
+
 The second-year students of the School of Energy Science and Engineering of Henan Polytechnic University have published a SCI four-area paper, participating in the reform of the cruise taxi in Jiaozuo City and the carbon reduction project of Chang 'an University. The research direction is image recognition.
