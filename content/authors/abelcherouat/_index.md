@@ -1,11 +1,10 @@
 ---
 title: Dr. Mohamed Infas Haja Mohideen
 
-role: Assistant Professor
-
+role: |
+  Assistant Professor  
   Department of Chemistry
 bio: Dr. Mohamed Mohideen earned his PhD  in Inorganic Chemistry from the University of St. Andrews, UK in 2011. He then held a postdoctoral researcher position at the King Abdullah University of Science & Technology, KSA. In 2014 he joined the Institute of Chemistry, Ceylon as a Senior Lecturer in Inorganic Chemistry. He held a Researcher position in the Department of Physical and Macromolecular Chemistry at the Charles University in Prague prior to joining Khalifa University as a Senior Lecturer in 2020. His research interests mainly aim to design and synthesize functional solid-state materials with a special focus on Metal Organic Frameworks and MXenes.
-
 social:
   - icon: envelope
     icon_pack: fas
