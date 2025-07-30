@@ -12,37 +12,19 @@ sections:
         - block: hero
     content:
       title: |
-        Department of Chemistry
+        MOF Materials Lab 
       image:
-        filename: ""  # اتركه فارغاً أو احذفه تمامًا لأنه سيتم إدراج الصور يدويًا
-      text: |
-        <br>
-        Khalifa University of Science and Technology today announced it has jumped 25 places to be ranked 177th globally in the QS World University Rankings 2026, firmly securing a spot among the world’s top 200 universities.
-      text2: |
-        <br>
-      html: |
-        <div id="hero-slideshow" style="position: relative; width: 100%; height: 400px; overflow: hidden;">
-          <img src="./media/welcome.jpg" class="slide-img" style="width:100%; height: 400px; object-fit: cover; position:absolute; top:0; left:0; opacity:1; transition: opacity 1s;">
-          <img src="./media/welcome.jpg" class="slide-img" style="width:100%; height: 400px; object-fit: cover; position:absolute; top:0; left:0; opacity:0; transition: opacity 1s;">
-        </div>
-        <script>
-          let index = 0;
-          const slides = document.querySelectorAll('.slide-img');
-          setInterval(() => {
-            slides.forEach((img, i) => img.style.opacity = (i === index % 2) ? "1" : "0");
-            index++;
-          }, 4000);
-        </script>
+        filename: welcome.jpeg
+      text :
+        (group logo)
 
-      text: |
-        <br>
-        Khalifa University of Science and Technology today announced it has jumped 25 places to be ranked 177th globally in the QS World University Rankings 2026, firmly securing a spot among the world’s top 200 universities.
-      text2: |
-        <br>
+
+   
+      
 
   - block: collection
     content:
-      title: Latest News
+      title: News
       subtitle:
       text:
       count: 5
@@ -58,6 +40,7 @@ sections:
     design:
       view: card
       columns: "1"
+      show_meta: false
 
   - block: markdown
     content:
