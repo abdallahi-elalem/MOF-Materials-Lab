@@ -19,9 +19,9 @@ marketing:
   seo:
     site_type: Organization
     local_business_type: "Research Lab"
-    org_name: "Smart Structural Health Monitoring and Control Laboratory (SSHMC)"
-    description: "Smart Structural Health Monitoring and Control Laboratory (SSHMC) was established in 2024 and mainly focus on the prediction the remaining life of structures in Civil engeening, such as a bridges, railroads, roads, viaducts or buildings"
-    twitter: "sshmc"
+    org_name: "MOF-Materials-Lab"
+    description: "MOF Materials Lab is a research group focused on the synthesis and characterization of metal-organic frameworks (MOFs) for various applications."
+    twitter: "MOF"
   analytics:
     google_analytics: ""
     baidu_tongji: ""
