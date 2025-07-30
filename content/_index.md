@@ -13,7 +13,8 @@ sections:
         filename: welcome.jpg
       text: |
         <br>
-        Smart Structural Health Monitoring and Control Laboratory (SSHMC) was established in 2024 and mainly focus on the prediction the remaining life of structures in Civil engeening, such as a bridges, railroads, roads, viaducts or buildings. However, all developped tools and knowledges can be extended to more applications such for crack detection on pipes, flow, .etc
+        Khalifa University of Science and Technology today announced it has jumped 25 places to be ranked 177th globally in the QS World University Rankings 2026, firmly securing a spot among the world’s top 200 universities.
+        For eight consecutive years, Khalifa University has remained the top institution in the UAE, reinforcing its status as a national leader in higher education and research. In the 2026 edition, the University leads across several key indicators including 11th in the world for ‘International Faculty,’ top in UAE for ‘Citations per Faculty,’ and ‘Faculty Student Ratio’, affirming its leadership in attracting global talent and producing high-impact scientific research.
       text2: |
         <br>
 
