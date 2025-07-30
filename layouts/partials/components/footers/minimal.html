@@ -17,16 +17,19 @@
 
     <hr class="bg-light">
 
-   <div class="position-relative py-3">
-  <!-- Footer Logo on the left -->
-  <img src="{{ $footer_logo.RelPermalink }}" alt="Site Footer" height="70px" width="200px" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%);">
+<div class="d-flex flex-column flex-md-row align-items-center justify-content-between py-3">
+  <!-- Footer Logo on the left (on large screens) -->
+  <div class="mb-2 mb-md-0">
+    <img src="{{ $footer_logo.RelPermalink }}" alt="Site Footer" height="70px" width="200px">
+  </div>
 
   <!-- Centered Text -->
-  <div class="text-center">
+  <div class="text-center flex-fill">
     <p class="mb-0">&copy; 2025 MOF Materials Lab</p>
     <p class="mb-0">Powered by <a href="https://github.com" class="text-info text-decoration-none">GitHub</a></p>
   </div>
 </div>
+
 
   </div>
 
