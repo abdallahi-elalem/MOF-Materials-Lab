@@ -26,7 +26,6 @@ education:
     - course: College of Chemical Sciences, Institute of Chemistry, Ceylon. Rajagiriya (Sri Lanka)
       institution: College of Chemical Sciences, Institute of Chemistry, Ceylon. Rajagiriya (Sri Lanka)
       year: 2004
-superuser: true
 user_groups:
   - Principal Investigator
 highlight_name: true
