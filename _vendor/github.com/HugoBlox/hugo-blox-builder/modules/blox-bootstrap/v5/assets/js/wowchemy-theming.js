@@ -205,13 +205,13 @@ function renderThemeVariation(isDarkTheme, themeMode = 2, init = false) {
 function onMediaQueryListEvent(event) {
   if (!canChangeTheme()) {
     // Changing theme variation is not allowed by admin.
-    return;
+    return false;
   }
   const darkModeOn = event.matches;
   console.debug(
     `OS dark mode preference changed to ${darkModeOn ? "🌒 on" : "☀️ off"}.`
   );
-  let currentThemeVariation = getThemeMode();
+  let currentThemeVariation = 0;
   let isDarkTheme;
   if (currentThemeVariation === 2) {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
