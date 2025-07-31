@@ -5,4 +5,5 @@ draft: false
 featured: true
 reading_time: false
 show_date: false
+date: 2025-07-01
 ---
