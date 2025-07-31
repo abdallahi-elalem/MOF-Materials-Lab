@@ -1,15 +1,10 @@
 # Theme metadata
-name = "Light"
-
 [light]
-# Primary color
-primary = "#0066cc"
-
-# Menu
-menu_primary = "#ffffff"
-menu_text = "rgba(0, 0, 0, 0.7)"
-menu_text_active = "rgba(0, 0, 0, 1)"
-menu_title = "#000000"
+primary = "#005eb8"
+menu_primary = "#0a3d7c"
+menu_text = "rgba(255, 255, 255, 0.8)"       # ← أبيض شبه شفاف
+menu_text_active = "rgba(255, 255, 255, 1)"   # ← أبيض واضح
+menu_title = "#ffffff"
 
 # Home sections
 home_section_odd = "hsla(0, 0%, 98%, 1)"
