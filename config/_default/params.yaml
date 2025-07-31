@@ -8,6 +8,8 @@
 appearance:
   theme_default: light
   theme_toggle: false
+  theme_day: light
+  theme_night: light
   font: cyberpunk
   font_size: L
 

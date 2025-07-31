@@ -6,110 +6,69 @@
  *  Supported Modes: {0: Light, 1: Dark, 2: Auto}
  **************************************************/
 
-import {fadeIn} from './wowchemy-animation';
+import { fadeIn } from "./wowchemy-animation";
 
 const body = document.body;
 
 function getThemeMode() {
-  return parseInt(localStorage.getItem('wcTheme') || 2);
+  return 0;
 }
 
 function canChangeTheme() {
   // If var is set, then user is allowed to change the theme variation.
-  return Boolean(window.wc.darkLightEnabled);
+  return false;
 }
 
 // initThemeVariation is first called directly after <body> to prevent
 // flashing between the default theme mode and the user's choice.
 function initThemeVariation() {
-  if (!canChangeTheme()) {
-    console.debug('User theming disabled.');
-    return {
-      isDarkTheme: window.wc.isSiteThemeDark,
-      themeMode: window.wc.isSiteThemeDark ? 1 : 0,
-    };
-  }
-
-  console.debug('User theming enabled.');
-
-  let isDarkTheme;
-  let currentThemeMode = getThemeMode();
-  console.debug(`User's theme variation: ${currentThemeMode}`);
-
-  switch (currentThemeMode) {
-    case 0:
-      isDarkTheme = false;
-      break;
-    case 1:
-      isDarkTheme = true;
-      break;
-    default:
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // The visitor prefers dark themes and switching to the dark variation is allowed by admin.
-        isDarkTheme = true;
-      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-        // The visitor prefers light themes and switching to the light variation is allowed by admin.
-        isDarkTheme = false;
-      } else {
-        // Use the site's default theme variation based on `light` in the theme file.
-        isDarkTheme = window.wc.isSiteThemeDark;
-      }
-      break;
-  }
-
-  if (isDarkTheme && !body.classList.contains('dark')) {
-    console.debug('Applying Hugo Blox Builder dark theme');
-    document.body.classList.add('dark');
-  } else if (!isDarkTheme && body.classList.contains('dark')) {
-    console.debug('Applying Hugo Blox Builder light theme');
-    document.body.classList.remove('dark');
-  }
-
+  console.debug("Forcing Light Theme Only.");
+  document.body.classList.remove("dark");
   return {
-    isDarkTheme: isDarkTheme,
-    themeMode: currentThemeMode,
+    isDarkTheme: false,
+    themeMode: 0,
   };
 }
 
 function changeThemeModeClick(newMode) {
   if (!canChangeTheme()) {
-    console.debug('Cannot change theme - user theming disabled.');
+    console.debug("Cannot change theme - user theming disabled.");
     return;
   }
   let isDarkTheme;
   switch (newMode) {
     case 0:
-      localStorage.setItem('wcTheme', '0');
+      localStorage.setItem("wcTheme", "0");
       isDarkTheme = false;
-      console.debug('User changed theme variation to Light.');
+      console.debug("User changed theme variation to Light.");
       break;
     case 1:
-      localStorage.setItem('wcTheme', '1');
+      localStorage.setItem("wcTheme", "1");
       isDarkTheme = true;
-      console.debug('User changed theme variation to Dark.');
+      console.debug("User changed theme variation to Dark.");
       break;
     default:
-      localStorage.setItem('wcTheme', '2');
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      localStorage.setItem("wcTheme", "2");
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
         // The visitor prefers dark themes and switching to the dark variation is allowed by admin.
         isDarkTheme = true;
-      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
         // The visitor prefers light themes and switching to the light variation is allowed by admin.
         isDarkTheme = false;
       } else {
         // Use the site's default theme variation based on `light` in the theme file.
         isDarkTheme = window.wc.isSiteThemeDark;
       }
-      console.debug('User changed theme variation to Auto.');
+      console.debug("User changed theme variation to Auto.");
       break;
   }
   renderThemeVariation(isDarkTheme, newMode);
 }
 
 function showActiveTheme(mode) {
-  let linkLight = document.querySelector('.js-set-theme-light');
-  let linkDark = document.querySelector('.js-set-theme-dark');
-  let linkAuto = document.querySelector('.js-set-theme-auto');
+  let linkLight = document.querySelector(".js-set-theme-light");
+  let linkDark = document.querySelector(".js-set-theme-dark");
+  let linkAuto = document.querySelector(".js-set-theme-auto");
 
   if (linkLight === null) {
     return;
@@ -118,21 +77,21 @@ function showActiveTheme(mode) {
   switch (mode) {
     case 0:
       // Light.
-      linkLight.classList.add('dropdown-item-active');
-      linkDark.classList.remove('dropdown-item-active');
-      linkAuto.classList.remove('dropdown-item-active');
+      linkLight.classList.add("dropdown-item-active");
+      linkDark.classList.remove("dropdown-item-active");
+      linkAuto.classList.remove("dropdown-item-active");
       break;
     case 1:
       // Dark.
-      linkLight.classList.remove('dropdown-item-active');
-      linkDark.classList.add('dropdown-item-active');
-      linkAuto.classList.remove('dropdown-item-active');
+      linkLight.classList.remove("dropdown-item-active");
+      linkDark.classList.add("dropdown-item-active");
+      linkAuto.classList.remove("dropdown-item-active");
       break;
     default:
       // Auto.
-      linkLight.classList.remove('dropdown-item-active');
-      linkDark.classList.remove('dropdown-item-active');
-      linkAuto.classList.add('dropdown-item-active');
+      linkLight.classList.remove("dropdown-item-active");
+      linkDark.classList.remove("dropdown-item-active");
+      linkAuto.classList.add("dropdown-item-active");
       break;
   }
 }
@@ -147,16 +106,19 @@ function showActiveTheme(mode) {
  */
 function renderThemeVariation(isDarkTheme, themeMode = 2, init = false) {
   // Is code highlighting enabled in site config?
-  const codeHlLight = document.querySelector('link[title=hl-light]');
-  const codeHlDark = document.querySelector('link[title=hl-dark]');
+  const codeHlLight = document.querySelector("link[title=hl-light]");
+  const codeHlDark = document.querySelector("link[title=hl-dark]");
   const codeHlEnabled = codeHlLight !== null || codeHlDark !== null;
-  const diagramEnabled = document.querySelector('script[title=mermaid]') !== null;
+  const diagramEnabled =
+    document.querySelector("script[title=mermaid]") !== null;
 
   // Update active theme mode in navbar theme selector.
   showActiveTheme(themeMode);
 
   // Dispatch `wcThemeChange` event to support themeable user plugins.
-  const themeChangeEvent = new CustomEvent('wcThemeChange', {detail: {isDarkTheme: () => isDarkTheme}});
+  const themeChangeEvent = new CustomEvent("wcThemeChange", {
+    detail: { isDarkTheme: () => isDarkTheme },
+  });
   document.dispatchEvent(themeChangeEvent);
 
   // Check if re-render required.
@@ -164,8 +126,8 @@ function renderThemeVariation(isDarkTheme, themeMode = 2, init = false) {
     // If request to render light when light variation already rendered, return.
     // If request to render dark when dark variation already rendered, return.
     if (
-      (isDarkTheme === false && !body.classList.contains('dark')) ||
-      (isDarkTheme === true && body.classList.contains('dark'))
+      (isDarkTheme === false && !body.classList.contains("dark")) ||
+      (isDarkTheme === true && body.classList.contains("dark"))
     ) {
       return;
     }
@@ -174,12 +136,12 @@ function renderThemeVariation(isDarkTheme, themeMode = 2, init = false) {
   if (isDarkTheme === false) {
     if (!init) {
       // Only fade in the page when changing the theme variation.
-      Object.assign(document.body.style, {opacity: 0, visibility: 'visible'});
+      Object.assign(document.body.style, { opacity: 0, visibility: "visible" });
       fadeIn(document.body, 600);
     }
-    body.classList.remove('dark');
+    body.classList.remove("dark");
     if (codeHlEnabled) {
-      console.debug('Setting HLJS theme to light');
+      console.debug("Setting HLJS theme to light");
       if (codeHlLight) {
         codeHlLight.disabled = false;
       }
@@ -188,10 +150,14 @@ function renderThemeVariation(isDarkTheme, themeMode = 2, init = false) {
       }
     }
     if (diagramEnabled) {
-      console.debug('Initializing Mermaid with light theme');
+      console.debug("Initializing Mermaid with light theme");
       if (init) {
         /** @namespace window.mermaid **/
-        window.mermaid.initialize({startOnLoad: true, theme: 'default', securityLevel: 'loose'});
+        window.mermaid.initialize({
+          startOnLoad: true,
+          theme: "default",
+          securityLevel: "loose",
+        });
       } else {
         // Have to reload to re-initialise Mermaid with the new theme and re-parse the Mermaid code blocks.
         location.reload();
@@ -200,12 +166,12 @@ function renderThemeVariation(isDarkTheme, themeMode = 2, init = false) {
   } else if (isDarkTheme === true) {
     if (!init) {
       // Only fade in the page when changing the theme variation.
-      Object.assign(document.body.style, {opacity: 0, visibility: 'visible'});
+      Object.assign(document.body.style, { opacity: 0, visibility: "visible" });
       fadeIn(document.body, 600);
     }
-    body.classList.add('dark');
+    body.classList.add("dark");
     if (codeHlEnabled) {
-      console.debug('Setting HLJS theme to dark');
+      console.debug("Setting HLJS theme to dark");
       if (codeHlLight) {
         codeHlLight.disabled = true;
       }
@@ -214,10 +180,14 @@ function renderThemeVariation(isDarkTheme, themeMode = 2, init = false) {
       }
     }
     if (diagramEnabled) {
-      console.debug('Initializing Mermaid with dark theme');
+      console.debug("Initializing Mermaid with dark theme");
       if (init) {
         /** @namespace window.mermaid **/
-        window.mermaid.initialize({startOnLoad: true, theme: 'dark', securityLevel: 'loose'});
+        window.mermaid.initialize({
+          startOnLoad: true,
+          theme: "dark",
+          securityLevel: "loose",
+        });
       } else {
         // Have to reload to re-initialise Mermaid with the new theme and re-parse the Mermaid code blocks.
         location.reload();
@@ -238,14 +208,16 @@ function onMediaQueryListEvent(event) {
     return;
   }
   const darkModeOn = event.matches;
-  console.debug(`OS dark mode preference changed to ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
+  console.debug(
+    `OS dark mode preference changed to ${darkModeOn ? "🌒 on" : "☀️ off"}.`
+  );
   let currentThemeVariation = getThemeMode();
   let isDarkTheme;
   if (currentThemeVariation === 2) {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       // The visitor prefers dark themes.
       isDarkTheme = true;
-    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
       // The visitor prefers light themes.
       isDarkTheme = false;
     } else {
